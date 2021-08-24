@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Clima</string>
+
+    <!-- APP STRING -->
+    <string name="cityFinder">cityFinder</string>
+    <string name="FindinCity">Search Through City</string>
+    <string name="temperature">temperature</string>
+    <string name="temperatureText">0°C</string>
+    <string name="weatherCondition">weatherCondition</string>
+    <string name="weatherConditionText">--------</string>
+    <string name="cityName">cityName</string>
+    <string name="getCityName">Fetching...</string>
+    <string name="showWeather">showWeather</string>
+    <string name="enterCityName">Enter City Name</string>
+    <string name="searchCity">searchCity</string>
+    <string name="backButton">Button For Going Back</string>
+    <string name="back">back</string>
+
+</resources>

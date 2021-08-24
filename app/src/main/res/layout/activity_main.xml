@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appScreenColor"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:id="@+id/showWeather"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/dunno">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cityFinder"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/temperatureText"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherCondition"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="@string/weatherConditionText"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityName"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:text="@string/getCityName"
+            android:textColor="@color/white"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cityFinder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cityColor"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FindinCity"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:textSize="20sp">
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
